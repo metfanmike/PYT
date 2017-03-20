@@ -1,0 +1,425 @@
+/* Header for all pages*/
+
+html {
+  font-size: 16px;                        /* Given*/
+}
+
+header {
+  width: 100%;                            /* Added*/
+  position: fixed;                        /* Added*/
+  top: 0;                                 /* Added*/
+  z-index: 1;                             /* Added*/
+}
+
+header img {
+  margin-left: 3.6875rem;                 /* Given*/
+  height: 50px;                           /* Given*/
+}
+
+.navbar {
+  height: 3.875rem;                       /* Given*/
+  background-color: #000000;              /* Given*/
+  border: 0px;                            /* Added*/
+  border-radius: 0px;                     /* Added - is the boostrap default a border radius > 0?*/
+}
+
+nav ul li {
+  font-family: "Open Sans";               /* Given*/
+  font-size: 1rem;                        /* Given*/
+  font-weight: bold;                      /* Given*/
+  color: #ffffff;                         /* Given*/
+  margin-right: 3.4375rem;                /* Given*/
+}
+
+span {
+  color: #f5a623;                         /* Doesn't look like spec when implemented*/
+}
+
+
+/*Body - Index*/
+body {
+  color: #ffffff;                         /* Given?*/
+}
+
+/*body div {
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+}*/
+
+.jumbotron {
+  background-image: url('../dancers-photo.png');  /* Given*/
+  background-repeat: no-repeat;           /* Added*/
+  background-position: center;            /* Added*/
+  background-size: cover;                 /* Added*/
+  text-align: center;                     /* Added*/
+  margin-top: 3.875rem;                   /* Given*/
+  margin-bottom: 0px;
+}
+
+.jumbotron h1 {
+  font-family: "Roboto";                  /* Given*/
+  font-size: 3.125rem;                    /* Given*/
+  font-weight: bold;                      /* Given*/
+  color: #ffffff;                         /* Given*/
+  line-height: 1;                         /* Given*/
+  width: 45rem;                           /* Given*/
+  padding-top: 9.4375rem;                  /* Given*/
+  padding-bottom: 2.6875rem;               /* Given*/
+  margin: 0 auto;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;                      /* Given*/
+  line-height: 1.5;                       /* Given*/
+  width: 45rem;                           /* Given*/
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background-color: #f5a623;              /* Given*/
+  border-radius: 2px;                     /* Given*/
+  font-family: "Open Sans";               /* Given*/
+  font-size: 1.375rem;                    /* Given*/
+  font-weight: bold;                      /* Given*/
+  padding: 1.25rem 3.125rem;              /* Given*/
+  margin-top: 5rem;                       /* Given*/
+  margin-bottom: 3.125rem;                /* Given*/
+}
+
+.child {
+    background-color: rgba(173, 74, 229, 0.9);    /* Given*/
+    height: 25rem;                        /* Given but seems too small*/
+    width: 25rem;                         /* Given but seems too small*/
+    padding: 5rem 3rem;                   /* Given*/
+    position: absolute;                   /* Added*/
+    bottom: 0px;                          /* Added*/
+    right: 0px;                           /* Added*/
+}
+
+.child h3 {
+  font-size: 2.25rem;                     /* Given*/
+  font-weight: bold;                      /* Given*/
+  line-height: 1.2;                       /* Given*/
+  padding-bottom: 1.25rem;                /* Given*/
+}
+
+.child p {
+  font-size: 1.125rem;                    /* Given*/
+  line-height: 1.4;                       /* Given*/
+}
+
+.graffiti {
+  background-image: url('../graffiti-photo.png');   /* Given*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;                         /* Given*/
+  display: block;
+  position: relative;
+}
+
+.fire {
+  background-image: url('../fire-photo.png');       /* Given*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;                         /* Given*/
+  display: block;
+  position: relative;
+}
+
+.jump {
+  background-image: url('../jump-photo.png');        /* Given*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;                         /* Given*/
+  display: block;
+  position: relative;
+}
+
+
+/*Body - About*/
+.about-top {
+  border-bottom: 10px solid #794ae2;      /* Given*/
+  display: flex;                          /* Added*/
+  height: 700px;                          /* CORRECT?*/
+  margin-top: 3.875rem;                   /* Given*/
+}
+
+.workout {
+  background-image: url('../workout-photo.png'); /* Given*/
+  background-repeat: no-repeat;           /* Added*/
+  background-position: center;            /* Added*/
+  background-size: cover;                 /* Added*/
+  width: 50%;                             /* Given*/
+}
+
+.about-des {
+  width: 50%;                             /* Given*/
+  color: #666666;                         /* Given*/
+  font-size: 1.5rem;                      /* Given*/
+  padding-right: 10rem;
+  text-align: center;
+  align-items: center;
+
+}
+
+.about-des h1 {
+  font-size: 3.125rem;                    /* Given*/
+  font-weight: bold;                      /* Given*/
+  margin-top: 30%;
+  color: #794ae2;                         /* Given*/
+  margin-bottom: 4rem;                    /* Given*/
+}
+
+.gray {
+  background-color: #f2f2f2;              /* Given*/
+}
+
+.white {
+  background-color: #ffffff;              /* Given*/
+}
+
+.about-div {
+  padding: 4rem 19%;                      /* Given*/
+  display: flex;
+  margin: 0;                              /* Added*/
+  align-items: center;
+}
+
+.about-div .many {
+  width: 50%;
+}
+
+.about-div h1 {
+  font-size: 2.25rem;                    /* Given*/
+  font-weight: bold;                     /* Given*/
+  color: #794ae2;                        /* Given*/
+  text-align: center;                    /* Added*/
+}
+
+.about-div p {
+  font-size: 1.5rem;                     /* Given*/
+  line-height: 1.5;                      /* Given*/
+  color: #666666;                        /* Given*/
+  text-align: center;
+}
+
+.about-div .icons {
+  height: 9.375rem;
+  text-align: center;
+  align-content: center;
+  flex-grow: 2;
+}
+
+.map {
+  background-image: url('../map.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;
+  display: block;
+  position: relative;
+}
+
+
+
+
+
+/*Body - Classes*/
+.classes-top {
+  border-bottom: 10px solid #794ae2;
+  display: flex;                          /* Added*/
+  height: 700px;                          /* CORRECT?*/
+  margin-top: 3.875rem;                   /* Given*/
+}
+
+.hands {
+  background-image: url('../classes-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.classes-des {
+  width: 50%;
+  color: #666666;
+  font-size: 1.5rem;
+  padding-right: 10rem;
+  text-align: center;
+}
+
+.classes-des h1 {
+  font-size: 3.125rem;                    /* Given*/
+  font-weight: bold;                      /* Given*/
+  color: rgba(174, 75, 227, 0.9);         /* Given*/
+  margin-top: 30%;
+  margin-bottom: 4rem;                    /* Given*/
+}
+
+.courses {
+  color: black;
+}
+
+.courses h3 {
+  font-weight: bold;
+  color: rgba(174, 75, 227, .9);
+  font-size: 1.875rem;
+  margin-top: 3.75rem;
+  margin-bottom: 1.125rem;
+
+}
+
+.courses h5 {
+  font-weight: bold;
+  margin-bottom: 1.125rem;
+}
+
+.courses p {
+  font-size: .875rem;
+  line-height: 1.7;
+  margin-bottom: 3.75rem;
+}
+
+
+
+
+/*Body - Faculty*/
+.faculty-top {
+  border-bottom: 10px solid #8a54ff;
+  background-image: url('../faculty-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;                          /* Added*/
+  height: 700px;                          /* CORRECT?*/
+  margin-top: 3.875rem;                   /* Given*/
+}
+
+.faculty-pic {
+  width: 50%;
+  height: 100%;
+}
+
+.faculty-des {
+  width: 50%;
+  color: #666666;
+  font-size: 1.5rem;
+  padding-top: 9rem;
+  padding-right: 10rem;
+  text-align: center;
+}
+
+.faculty-des h1 {
+  font-size: 3.125rem;                    /* Given*/
+  font-weight: bold;                      /* Given*/
+  color: #794ae2;                         /* Given*/
+  margin-bottom: 4rem;                    /* Given*/
+}
+
+
+.top {
+  margin-top: 5.625rem;
+  margin-bottom: 6.25rem;
+}
+
+.bottom {
+  margin-top: 6.25rem;
+  margin-bottom: 11.25rem;
+}
+
+.lineup {
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
+
+.teachers {
+  text-align: center;         /* Added*/
+  opacity: 0.5;               /* Added*/
+}
+
+.teachers {
+  color: black;               /* Added*/
+}
+
+.teachers img {
+  width: 16.875rem;           /* Given*/
+}
+
+.teachers h2 {
+  font-weight: bold;          /* Given*/
+  color: #8a54ff;             /* Given*/
+  font-size: 1.875rem;        /* Given*/
+  margin-top: 1.25rem;        /* Given*/
+  margin-bottom: .625rem;     /* Given*/
+}
+
+.teachers h3 {
+  font-weight: bold;          /* Given*/
+  font-size: 1.125rem;        /* Given*/
+  padding-bottom: .625rem;    /* Given*/
+}
+
+.teachers h4 {
+  line-height: 1.5;
+}
+
+
+
+/*Footer*/
+
+footer {
+  background-image: url('../party-photo.png');  /* Given*/
+  display: block;                     /* Added*/
+  position: relative;                 /* Added - why is this needed again*/
+}
+
+footer .top-footer {
+  height: 3.125rem;                   /* Given*/
+}
+
+footer .top-footer p {
+  display: inline;                    /* Added*/
+  position: absolute;                 /* Added*/
+  right: 3rem;                        /* Added - is this just a ball park?*/
+  top: .8rem;                         /* Added - is this just a ball park?*/
+}
+
+footer .top-footer .social {
+  display: inline;                    /* Given*/
+  min-width: 9.375rem;                    /* Given*/
+  top: .8rem
+}
+
+footer .bottom-footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Given*/
+  text-align: center;                 /* Given*/
+  height: 15rem;                      /* Given*/
+  font-size: .875rem;                 /* Given*/
+  letter-spacing: 0.7px;              /* Given*/
+  padding: 5rem;                      /* Given*/
+}
+
+
+
+
+
+
+
+
+/* Media Query for mobile*/
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Media Query for tablet*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
